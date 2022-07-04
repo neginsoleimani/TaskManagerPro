@@ -1,0 +1,19 @@
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 85vh;
+}
+
+main div{
+
+}
+
+@media only screen and (max-width:800px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+    }
+    
+}

@@ -1,0 +1,31 @@
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 1px 1px #eee;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.nav-btn a {
+    text-decoration: none;
+    padding-left: 1.5rem;
+    color: black;
+}
+
+.nav-btn i {
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width:800px) {
+
+    nav {
+        padding: 1rem;
+    }
+
+    .nav-btn a {
+        padding-left: 1rem;
+    }
+}

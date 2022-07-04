@@ -1,0 +1,44 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #92B4EC;
+    color: white;
+}
+
+.footer-btn{
+    display: flex;
+    align-items: center;
+}
+
+.footer-btn a {
+    text-decoration: none;
+    padding-left: 1.5rem;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold
+}
+
+.footer-btn i {
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width:800px) {
+    footer {
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        padding: 1rem;
+    }
+
+    .footer-btn{
+        padding: 0.5rem 0;
+    }
+    .footer-btn a {
+        text-decoration: none;
+        padding-right: 0;
+    }
+    
+
+}
