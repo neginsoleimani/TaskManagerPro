@@ -1,0 +1,50 @@
+.setting-container{
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.setting-nav{
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #92B4EC;
+    color: white;
+}
+
+
+.setting {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;    
+    box-shadow: 1px 1px #eee;
+}
+
+.setting div{
+    margin: 2.5rem;
+}
+
+.setting h4{
+    text-align: center;
+    margin-top:0.5rem;
+    font-weight: normal;
+    border: 1.5px solid #eee;
+    padding: 0.5rem ;
+    border-radius: 5px;
+}
+
+.theme-1 img {
+    border-radius: 0.5rem;
+    width: 15rem;
+}
+
+.theme-2 img {
+    border-radius: 0.5rem;
+    width: 15rem;
+}
+
+.theme-3 img {
+    border-radius: 0.5rem;
+    width: 15rem;
+}
