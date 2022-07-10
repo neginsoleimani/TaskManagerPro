@@ -7,6 +7,11 @@ document.querySelector("nav i").style.color = localStorage.getItem("nav-text-col
 document.querySelector("nav").style.boxShadow = localStorage.getItem("boxshadow");
 document.querySelector(".setting").style.boxShadow = localStorage.getItem("boxshadow");
 document.querySelector(".setting").style.color = localStorage.getItem("text-color");
+let Btn = document.querySelectorAll(".btn");
+for (let i = 0; i < Btn.length; i++) {
+    Btn[i].style.border = localStorage.getItem("border-color");
+  }
+
 
 let settingBtn = document.getElementById("setting-btn");
 let settingCloseBtn = document.getElementById("setting-close-btn")
@@ -48,6 +53,7 @@ function setlightTheme() {
     localStorage.setItem("nav-text-color","#000")
     localStorage.setItem("boxshadow","1px 1px #eee")
     localStorage.setItem("text-color","#000")
+    localStorage.setItem("border-color","1.5px solid #eee")
     document.querySelector("footer").style.backgroundColor = localStorage.getItem("theme");
     document.querySelector("body").style.backgroundColor = localStorage.getItem("bg-color")
     document.querySelector(".setting-nav").style.backgroundColor = localStorage.getItem("theme");
@@ -57,6 +63,11 @@ function setlightTheme() {
     document.querySelector(".setting").style.boxShadow = localStorage.getItem("boxshadow");
     document.querySelector(".setting").style.boxShadow = localStorage.getItem("boxshadow");
     document.querySelector(".setting").style.color = localStorage.getItem("text-color");
+    for (let i = 0; i < Btn.length; i++) {
+        Btn[i].style.border = localStorage.getItem("border-color");
+      }
+    
+    
 }
 
 
@@ -66,6 +77,7 @@ function setNeonTheme() {
     localStorage.setItem("nav-text-color","#000")
     localStorage.setItem("boxshadow","1px 1px #eee")
     localStorage.setItem("text-color","#000")
+    localStorage.setItem("border-color","1.5px solid #eee")
     document.querySelector("footer").style.backgroundColor = localStorage.getItem("theme");
     document.querySelector("body").style.backgroundColor = localStorage.getItem("bg-color")
     document.querySelector(".setting-nav").style.backgroundColor = localStorage.getItem("theme");
@@ -75,14 +87,21 @@ function setNeonTheme() {
     document.querySelector(".setting").style.boxShadow = localStorage.getItem("boxshadow");
     document.querySelector(".setting").style.boxShadow = localStorage.getItem("boxshadow");
     document.querySelector(".setting").style.color = localStorage.getItem("text-color");
+    for (let i = 0; i < Btn.length; i++) {
+        Btn[i].style.border = localStorage.getItem("border-color");
+      }
+    
+    
 }
 
 function setDarkTheme() {
+    const Btn = document.querySelectorAll(".btn");
     localStorage.setItem("theme", "#4C0070");
     localStorage.setItem("bg-color", "#160040")
     localStorage.setItem("nav-text-color","#fff")
     localStorage.setItem("boxshadow","1px 1px #4C0070")
     localStorage.setItem("text-color","#fff")
+    localStorage.setItem("border-color","1.5px solid #4C0070")
     document.querySelector("footer").style.backgroundColor = localStorage.getItem("theme");
     document.querySelector("body").style.backgroundColor = localStorage.getItem("bg-color")
     document.querySelector(".setting-nav").style.backgroundColor = localStorage.getItem("theme");
@@ -92,6 +111,9 @@ function setDarkTheme() {
     document.querySelector(".setting").style.boxShadow = localStorage.getItem("boxshadow");
     document.querySelector(".setting").style.boxShadow = localStorage.getItem("boxshadow");
     document.querySelector(".setting").style.color = localStorage.getItem("text-color");
+    for (let i = 0; i < Btn.length; i++) {
+        Btn[i].style.border = localStorage.getItem("border-color");
+      }
 
 }
 
@@ -103,6 +125,7 @@ function setRetroTheme() {
     localStorage.setItem("nav-text-color","#fff")
     localStorage.setItem("boxshadow","1px 1px #FFAB4C")
     localStorage.setItem("text-color","#fff")
+    localStorage.setItem("border-color","1.5px solid #FFAB4C")
     document.querySelector("footer").style.backgroundColor = localStorage.getItem("theme");
     document.querySelector("body").style.backgroundColor = localStorage.getItem("bg-color")
     document.querySelector(".setting-nav").style.backgroundColor = localStorage.getItem("theme");
@@ -112,6 +135,10 @@ function setRetroTheme() {
     document.querySelector(".setting").style.boxShadow = localStorage.getItem("boxshadow");
     document.querySelector(".setting").style.boxShadow = localStorage.getItem("boxshadow");
     document.querySelector(".setting").style.color = localStorage.getItem("text-color");
+    for (let i = 0; i < Btn.length; i++) {
+        Btn[i].style.border = localStorage.getItem("border-color");
+      }
+
 }
 
 
