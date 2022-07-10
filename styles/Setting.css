@@ -1,6 +1,12 @@
 .setting-container{
     font-family: 'Raleway', sans-serif;
+    display: none;
+    animation-duration: 0.8s;
+    animation-name: animate-open;
+}
 
+.setting-container i{
+    cursor: pointer;
 }
 
 .setting-nav{
@@ -32,6 +38,7 @@
     border: 1.5px solid #eee;
     padding: 0.5rem ;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .theme-1 img {
@@ -48,3 +55,13 @@
     border-radius: 0.5rem;
     width: 15rem;
 }
+
+@keyframes animate-open {
+    from {
+      width: 0;
+    }
+  
+    to {
+        width: 100%;
+    }
+  }
