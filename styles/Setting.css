@@ -56,6 +56,11 @@
     width: 15rem;
 }
 
+.theme-4 img {
+    border-radius: 0.5rem;
+    width: 15rem;
+}
+
 @keyframes animate-open {
     from {
       width: 0;
@@ -65,3 +70,46 @@
         width: 100%;
     }
   }
+
+
+  @media only screen and (max-width:800px) {
+
+
+    .theme-1 img {
+        border-radius: 0.5rem;
+        width: 10rem;
+    }
+
+    .theme-2 img {
+        border-radius: 0.5rem;
+        width: 10rem;
+    }
+    
+    .theme-3 img {
+        border-radius: 0.5rem;
+        width: 10rem;
+    }
+
+    .theme-4 img {
+        border-radius: 0.5rem;
+        width: 10rem;
+    }
+
+    .setting div{
+        margin: 2.5rem;
+    }
+
+    .setting div{
+        margin: 1.5rem;
+    }
+    
+
+    .setting {
+        overflow: auto;
+        justify-content:initial;
+        scroll-behavior: smooth;
+    }
+    
+
+
+  } 

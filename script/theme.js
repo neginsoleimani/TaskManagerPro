@@ -120,12 +120,12 @@ function setDarkTheme() {
 
 
 function setRetroTheme() {
-    localStorage.setItem("theme", "#FFAB4C");
-    localStorage.setItem("bg-color", "#142F43")
+    localStorage.setItem("theme", "#197163");
+    localStorage.setItem("bg-color", "#065446")
     localStorage.setItem("nav-text-color","#fff")
-    localStorage.setItem("boxshadow","1px 1px #FFAB4C")
+    localStorage.setItem("boxshadow","1px 1px #197163")
     localStorage.setItem("text-color","#fff")
-    localStorage.setItem("border-color","1.5px solid #FFAB4C")
+    localStorage.setItem("border-color","1.5px solid #197163")
     document.querySelector("footer").style.backgroundColor = localStorage.getItem("theme");
     document.querySelector("body").style.backgroundColor = localStorage.getItem("bg-color")
     document.querySelector(".setting-nav").style.backgroundColor = localStorage.getItem("theme");
