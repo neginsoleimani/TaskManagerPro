@@ -10,3 +10,11 @@
 body{
     height: 100vh;
 }
+
+
+.app-container{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+}
