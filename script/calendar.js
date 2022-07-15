@@ -45,6 +45,8 @@ generateCalendar = (month, year) => {
         }
         calendar_days.appendChild(day)
     }
+
+    document.querySelector(".Calendar-days div.curr-date").style.backgroundColor=localStorage.getItem("curr-date")
 }
 
 let month_list =document.querySelector(".month-list")
