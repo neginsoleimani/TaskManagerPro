@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/Navbar.css">
     <link rel="stylesheet" href="./styles/Main.css">
     <link rel="stylesheet" href="./styles/Calendar.css">
+    <link rel="stylesheet" href="./styles/TaskManager.css">
     <link rel="stylesheet" href="./styles/Setting.css">
     <link rel="stylesheet" href="./styles/Footer.css">
 </head>
@@ -105,11 +106,82 @@
                     </div>
                 </div>
 
-    
                 <div class="month-list"></div>
             </div>
-            <div class="taskManager"></div>
+
+
+            <div class="taskManager">
+                <div class="taskManager-container">
+                    <section class="greating">
+                        <h2 class="title">What's up <input type="text" id="info" placeholder=" Name here "/></h2>
+                    </section>
+
+                    <section class="create-todo">
+                        <h3>Craete a todo</h3>
+                        <form id="new-todo-form">
+                            <h4>What's on your todo list ?</h4>
+                            <input type="text" name="content" id="content" placeholder="e.g make a video"/>
+                            <h4>pick a category</h4>
+                            <div class="options">
+                                <label >
+                                    <input type="radio" name="category" id="category1" value="business"/>
+                                    <span class="bubble business"></span>
+                                    <div>Business</div>
+                                </label>
+                                <label >
+                                    <input type="radio" name="category" id="category2" value="personal"/>
+                                    <span class="bubble personal"></span>
+                                    <div>Personal</div>
+                                </label>
+                            </div>
+
+                            <input type="submit" value="Add todo">
+                        </form>
+                    </section>
+
+                    <section class="todo-list">
+                        <h3>Todo list</h3>
+                        <div class="list" id="todo-list">
+                            <div class="todo-item done">
+                                <label>
+                                    <input type="checkbox"/>
+                                    <span class="bubble business"></span>
+                                </label>
+                                <div class="todo-content">
+                                    <input type="text" value="Make a video" readonly>
+                                </div>
+
+                                <div class="action">
+                                    <button class="edit">Edit</button>
+                                    <button class="delete">Delete</button>
+                                </div>
+                            </div>
+
+                            <div class="todo-item">
+                                <label>
+                                    <input type="checkbox"/>
+                                    <span class="bubble personal"></span>
+                                </label>
+                                <div class="todo-content">
+                                    <input type="text" value="Drink a milk" readonly>
+                                </div>
+
+                                <div class="action">
+                                    <button class="edit">Edit</button>
+                                    <button class="delete">Delete</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </section>
+                </div>
+            </div>
         </div>
+
+
+       
 
 
     </main>

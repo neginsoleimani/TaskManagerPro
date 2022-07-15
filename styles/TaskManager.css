@@ -1,0 +1,217 @@
+.taskManager {
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+.taskManager-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: initial;
+    font-family: 'Raleway', sans-serif;
+}
+
+section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.taskManager h3 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: gray;
+}
+
+.taskManager h4 {
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    /* theme */
+}
+
+.greating .title {
+    display: flex;
+}
+
+.greating .title input {
+    margin-left: 0.5rem;
+    flex: 1 1 0%;
+    min-width: 0;
+}
+
+.greating .title,
+.greating .title input {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.create-todo input[type="text"] {
+    display: block;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    background-color: #79018C;
+    color: white;
+    /* theme */
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.create-todo .options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.create-todo .options label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #9A0680;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+
+.bubble.personal {
+    border-color: aqua;
+    /* theme */
+}
+
+.bubble::after {
+    content: "";
+    display: block;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    background-color: gray;
+    /* business */
+    transition: 0.2s ease-in-out;
+    border-radius: 50%;
+}
+
+
+.bubble.personal::after {
+    background-color: aqua;
+}
+
+input:checked~.bubble::after {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+
+.create-todo.options label div {
+    font-size: 1.125rem;
+    margin-top: 1rem;
+}
+
+.create-todo input[type="submit"] {
+    display: block;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    background-color: #79018C;
+    color: white;
+    border-radius: 10px;
+    /* theme */
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.create-todo input[type="submit"]:hover {
+    opacity: 0.75;
+}
+
+.todo-list .list {
+    margin: 1rem 0;
+}
+
+.todo-list .todo-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #9A0680;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+
+}
+
+
+.todo-item label{
+    display: block;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.todo-item .todo-content {
+    flex:1 1 0%;
+}
+
+.todo-item .todo-content input{
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.todo-item .action{
+    display: flex;
+    align-items: center;
+}
+
+.todo-item .action button{
+    display: block;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: white;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.todo-item .action button:hover{
+opacity: 0.75;
+}
+.todo-item .action .edit{
+    margin-right: 0.5rem;
+    background-color: #eee;
+}
+
+.todo-item.done .todo-content input{
+text-decoration: line-through;
+color:white;
+}
+
+
+@media only screen and (max-width:800px) {}

@@ -7,21 +7,22 @@
     scroll-behavior: smooth;
 }
 
-body{
-    height: 100vh;
-}
+body{}
+
 
 
 .app-container{
-    height: 80vh;
+
+    margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     place-items: center;
+    margin-bottom: 3.8rem;
 }
 
 @media only screen and (max-width:800px){
     .app-container{
-        height: 80vh;
+        margin-top: 2.5rem;
         display: grid;
         grid-template-columns:1fr;
         place-items: center;
