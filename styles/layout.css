@@ -19,6 +19,15 @@ body{
     place-items: center;
 }
 
-@media only screen and (max-width:800px){}
+@media only screen and (max-width:800px){
+    .app-container{
+        height: 80vh;
+        display: grid;
+        grid-template-columns:1fr;
+        place-items: center;
+       
+    }
+
+}
 
 
