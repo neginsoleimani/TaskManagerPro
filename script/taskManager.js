@@ -34,6 +34,7 @@ function DisplayTodos() {
     const todoList = document.querySelector("#todo-list")
     todoList.innerHTML = ''
 
+
     todos.forEach(todo => {
         const todoItem = document.createElement("div")
         todoItem.classList.add("todo-item")
@@ -59,10 +60,10 @@ function DisplayTodos() {
         editBtn.classList.add("edit")
         deleteBtn.classList.add("delete")
 
-        content.innerHTML = `<input type="text" value = "${todo.content}  readonly">`
+        content.innerHTML = `<input type="text" value = "${todo.content}" readonly/>`
 
-        editBtn.innerHTML = "Edit"
-        deleteBtn.innerHTML = "Delete"
+        editBtn.innerHTML = `<i class="bi bi-pencil"></i>`
+        deleteBtn.innerHTML = `<i class="bi bi-x-circle"></i>`
 
         label.appendChild(input)
         label.appendChild(span)
@@ -72,7 +73,13 @@ function DisplayTodos() {
         todoItem.appendChild(content)
         todoItem.appendChild(actions)
         todoList.appendChild(todoItem)
-
+        
+        todoItemBg = document.querySelectorAll(".todo-list .todo-item")
+        for (let i = 0; i < todoItemBg.length; i++) {
+            todoItemBg[i].style.backgroundColor = localStorage.getItem("todo-item");
+        }
+    
+  
         if (todo.done) {
             todoItem.classList.add("done")
         }

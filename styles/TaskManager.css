@@ -3,6 +3,8 @@
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
     width: 100%;
+    border-radius: 30px 0 0 30px;
+    border: 1px solid #eee;
 
 }
 
@@ -30,11 +32,12 @@ section {
 .taskManager h3 {
     font-weight: bold;
     margin-bottom: 0.5rem;
+    font-size: 1.3rem;
     color: gray;
 }
 
 .taskManager h4 {
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
     /* theme */
@@ -61,7 +64,7 @@ section {
     width: 100%;
     font-size: 1.125rem;
     padding: 1rem 1.5rem;
-    background-color: #79018C;
+    background-color: #FFE69A;
     color: white;
     /* theme */
     border-radius: 10px;
@@ -81,7 +84,7 @@ section {
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    background-color: #9A0680;
+    background-color: #92B4EC;
     border-radius: 10px;
     cursor: pointer;
     color: white;
@@ -105,7 +108,7 @@ input[type="checkbox"] {
 }
 
 .bubble.personal {
-    border-color: aqua;
+    border-color: white;
     /* theme */
 }
 
@@ -123,7 +126,7 @@ input[type="checkbox"] {
 
 
 .bubble.personal::after {
-    background-color: aqua;
+    background-color: white;
 }
 
 input:checked~.bubble::after {
@@ -142,12 +145,13 @@ input:checked~.bubble::after {
     width: 100%;
     font-size: 1.125rem;
     padding: 1rem 1.5rem;
-    background-color: #79018C;
+    background-color: #92B4EC;
     color: white;
     border-radius: 10px;
     /* theme */
     cursor: pointer;
     transition: 0.2s ease-in-out;
+    font-weight: bold;
 }
 
 .create-todo input[type="submit"]:hover {
@@ -162,10 +166,10 @@ input:checked~.bubble::after {
     display: flex;
     align-items: center;
     padding: 1rem;
-    background-color: #9A0680;
+    background-color: #FFD24C;
     border-radius: 10px;
     margin-bottom: 1rem;
-
+    animation: to-top 0.5s ease-out;
 }
 
 
@@ -180,7 +184,7 @@ input:checked~.bubble::after {
 }
 
 .todo-item .todo-content input{
-    color: white;
+    color: black;
     font-size: 0.8rem;
     font-weight: bold;
 }
@@ -194,8 +198,9 @@ input:checked~.bubble::after {
     display: block;
     padding: 0.5rem;
     border-radius: 5px;
-    background-color: white;
+    background-color: #ff5050;
     transition: 0.2s ease-in-out;
+    color: white;
     cursor: pointer;
     font-weight: bold;
 }
@@ -205,7 +210,8 @@ opacity: 0.75;
 }
 .todo-item .action .edit{
     margin-right: 0.5rem;
-    background-color: #eee;
+    background-color: #fff;
+    color: black;
 }
 
 .todo-item.done .todo-content input{
@@ -214,4 +220,12 @@ color:white;
 }
 
 
-@media only screen and (max-width:800px) {}
+
+@media only screen and (max-width:800px) {
+
+    .taskManager{
+        border-radius: 0;
+        border: none;
+    }
+
+}
