@@ -4,9 +4,9 @@
 </div>
 
 <div align="center">
-<img src="demo/img1.png" width="31%"></img> 
-<img src="demo/img2.png" width="31%"></img>
-<img src="demo/img3.png" width="31%"></img> 
+<img src="demo/img1.png" width="32%"></img> 
+<img src="demo/img2.png" width="32%"></img>
+<img src="demo/img3.png" width="32%"></img> 
 </div>
 
 <br/>
