@@ -1,8 +1,12 @@
 <h1 align="center">Task Manager Pro</h1>
 <div align="center">
-<img src="demo/img1.png" width="31%"></img> 
-<img src="demo/img2.png" width="31%"></img>
-<img src="demo/img3.png" width="31%"></img> 
+<img src="demo/img4.png" width="100%"></img> 
+</div>
+
+<div align="center">
+<img src="demo/img1.png" width="33%"></img> 
+<img src="demo/img2.png" width="33%"></img>
+<img src="demo/img3.png" width="33%"></img> 
 </div>
 
 <br/>
